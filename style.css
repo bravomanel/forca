@@ -1,0 +1,95 @@
+/* Estilo Mobile First */
+
+/* Área da Forca */
+.forca-container {
+    max-width: 200px;
+    height: 250px;
+}
+
+.forca-svg .forca-parte {
+    stroke: #333;
+    stroke-width: 4;
+}
+
+.forca-svg .corda {
+    stroke-width: 2;
+}
+
+.boneco-parte {
+    stroke: #d9534f;
+    stroke-width: 3;
+    fill: transparent;
+    stroke-linecap: round;
+    visibility: hidden;
+}
+
+#palavra-secreta {
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    min-height: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    user-select: none;
+}
+
+.letra-display {
+    border-bottom: 4px solid #333;
+    width: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+#input-letra {
+    width: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.letras-usadas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 30px;
+    max-width: 320px;
+    justify-content: center;
+}
+
+.letra-usada {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.letra-usada.correta {
+    background-color: #198754;
+}
+
+.letra-usada.incorreta {
+    background-color: #dc3545;
+}
+
+.area-chute-palavra {
+    width: 100%;
+    max-width: 380px;
+    border-top: 1px solid #dee2e6;
+}
+
+@media (min-width: 768px) {
+    #palavra-secreta {
+        font-size: 3rem;
+        gap: 15px;
+    }
+
+    .letra-display {
+        width: 45px;
+    }
+}
